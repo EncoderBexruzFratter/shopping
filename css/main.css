@@ -419,6 +419,9 @@ button {
     background-color: transparent;
     text-align: center;
 }
+.hero__swiper{
+    display: flex;
+}
 
 @media(max-width:1280px) {
     .hero__container {
@@ -456,9 +459,16 @@ button {
         line-height: 26px;
         padding: 25px 22px 25px 22px;
     }
+    .hero__swiper{
+        display: none;
+    }
 }
 
 @media(max-width:510px) {
+    .swiper{
+        display: none;
+    }
+  
     .hero__container {
         justify-content: center;
         padding-top: 49px;
@@ -501,6 +511,9 @@ button {
         width: 100%;
         font-size: 16px;
         line-height: 23px;
+    }
+    .mySwiper{
+        display: none;
     }
 }
 
