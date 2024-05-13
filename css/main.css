@@ -44,7 +44,6 @@ button {
     color: #323232;
     font-size: 18px;
     font-weight: 500;
-    line-height: 26.46px;
 }
 
 .border__left-1 {
@@ -85,7 +84,6 @@ button {
 .header__nav__link {
     font-size: 18px;
     font-weight: 500;
-    line-height: 26.46px;
     text-decoration: none;
     color: #323232;
 }
@@ -177,6 +175,7 @@ button {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1111;
     background-color: #fff;
     padding-top: 50px;
     padding-left: 20px;
@@ -213,52 +212,60 @@ button {
 .header__hamburger__menu__link {
     font-size: 18px;
     font-weight: 500;
-    line-height: 26.46px;
     color: #191919;
     text-decoration: none;
     display: flex;
     flex-direction: column-reverse;
     width: auto;
 }
+
 .ham__w-136 {
     width: 137px;
 }
+
 .ham__w-36 {
     width: 36px;
 }
+
 .ham__w-63 {
     width: 63px;
 }
+
 .ham__w-37 {
     width: 37px;
 }
+
 .ham__w-100 {
     width: 100px;
 }
+
 .ham__w-38 {
     width: 38px;
 }
+
 .ham__w-62 {
     width: 63px;
 }
+
 .ham__w-58 {
     width: 59px;
 }
-.header__hamburger__menu__link_line{
+
+.header__hamburger__menu__link_line {
     width: 0%;
     background-color: #191919;
     height: 2px;
     gap: 2px;
     transition: all .3s;
 }
-.header__hamburger__menu__link:hover .header__hamburger__menu__link_line{
+
+.header__hamburger__menu__link:hover .header__hamburger__menu__link_line {
     width: 100%;
 }
 
 @media(max-width:1280px) {
     .header__nav__link {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .header__top__nav__list {
@@ -268,11 +275,11 @@ button {
 
     .header__top__nav__link {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .search__box {}
 }
+
 @media(max-width:890px) {
     .header__nav__list {
         display: none;
@@ -345,34 +352,40 @@ button {
     padding-left: 10px;
     position: relative;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     position: absolute !important;
 }
-.swiper-pagination-bullet{
+
+.swiper-pagination-bullet {
     width: 12px !important;
     height: 12px !important;
     background-color: #ADADAD !important;
     opacity: 100% !important;
 }
-.swiper-pagination-bullet-active{
+
+.swiper-pagination-bullet-active {
     background-color: #101010 !important;
 }
-.swiper-pagination{
+
+.swiper-pagination {
     position: absolute;
     top: -500px;
 }
+
 .hero__text__box {
     max-width: 457px;
     width: 100%;
     margin-left: auto;
 }
-.hero__hidden{
+
+.hero__hidden {
     display: none;
 }
+
 .hero__title {
     font-size: 72px;
     font-weight: 500;
-    line-height: 93.63px;
     color: #1A1A1A;
     margin-bottom: 42px;
 }
@@ -380,7 +393,6 @@ button {
 .hero__text {
     font-size: 22px;
     font-weight: 300;
-    line-height: 32.34px;
     color: #303030;
     margin-bottom: 50px;
 }
@@ -399,7 +411,6 @@ button {
     background-color: #191919;
     font-size: 22px;
     font-weight: 400;
-    line-height: 32.34px;
     color: white;
     text-decoration: none;
     text-align: center;
@@ -412,14 +423,14 @@ button {
     border-radius: 10px;
     font-size: 22px;
     font-weight: 400;
-    line-height: 32.34px;
     color: #191919;
     text-decoration: none;
     border: none;
     background-color: transparent;
     text-align: center;
 }
-.hero__swiper{
+
+.hero__swiper {
     display: flex;
 }
 
@@ -427,48 +438,48 @@ button {
     .hero__container {
         max-width: 1280px;
     }
-    .swiper{
+
+    .swiper {
         display: none;
     }
-    .hero__text__box{
+
+    .hero__text__box {
         display: block;
     }
+
     .hero__title {
         max-width: 256px;
         width: 100%;
         font-size: 54px;
-        line-height: 70px;
         margin-bottom: 40px;
     }
 
     .hero__text {
         font-size: 18px;
-        line-height: 26px;
         max-width: 299px;
         width: 100%;
     }
 
     .hero__view_link {
         font-size: 18px;
-        line-height: 26px;
         padding: 25px 22px 25px 22px;
     }
 
     .hero__buy_btn {
         font-size: 18px;
-        line-height: 26px;
         padding: 25px 22px 25px 22px;
     }
-    .hero__swiper{
+
+    .hero__swiper {
         display: none;
     }
 }
 
-@media(max-width:510px) {
-    .swiper{
+@media(max-width:768px) {
+    .swiper {
         display: none;
     }
-  
+
     .hero__container {
         justify-content: center;
         padding-top: 49px;
@@ -478,7 +489,9 @@ button {
         padding-right: 10px;
     }
 
-    .hero__text__box {}
+    .hero__text__box {
+        margin: auto;
+    }
 
     .hero__text {
         margin: auto;
@@ -501,7 +514,6 @@ button {
         max-width: 165px;
         width: 100%;
         font-size: 16px;
-        line-height: 23px;
     }
 
     .hero__buy_btn {
@@ -510,9 +522,9 @@ button {
         max-width: 165px;
         width: 100%;
         font-size: 16px;
-        line-height: 23px;
     }
-    .mySwiper{
+
+    .mySwiper {
         display: none;
     }
 }
@@ -536,7 +548,6 @@ button {
 .trending__title {
     font-size: 27px;
     font-weight: 400;
-    line-height: 39.69px;
     color: #1A1A1A;
     margin-bottom: 50px;
 }
@@ -563,7 +574,6 @@ button {
 .trending__card__title {
     font-size: 24px;
     font-weight: 400;
-    line-height: 35.28px;
     color: #1A1A1A;
 }
 
@@ -598,7 +608,6 @@ button {
 .trending__bottom__title {
     font-size: 32px;
     font-weight: 500;
-    line-height: 47.04px;
     color: white;
 }
 
@@ -611,7 +620,6 @@ button {
     background-color: white;
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     text-align: center;
 }
 
@@ -627,12 +635,10 @@ button {
 
     .trending__title {
         font-size: 24px;
-        line-height: 35px;
     }
 
     .trending__card__title {
         font-size: 22px;
-        line-height: 32px;
     }
 
     .trending__img {
@@ -645,18 +651,17 @@ button {
 
     .trending__bottom__title {
         font-size: 27px;
-        line-height: 39px;
     }
 
     .ternding__bottom__card {
         gap: 25px;
     }
-    .trending__bottom__shop__btn{
+
+    .trending__bottom__shop__btn {
         max-width: 90px;
         width: 100%;
         padding: 15px 25px 14px 25px;
         font-size: 16px;
-        line-height: 23px;
     }
 }
 
@@ -677,7 +682,6 @@ button {
 
     .trending__card__title {
         font-size: 18px;
-        line-height: 110%;
     }
 }
 
@@ -716,7 +720,6 @@ button {
 
     .trending__bottom__title {
         font-size: 20px;
-        line-height: 29px;
     }
 
     .trending__img {
@@ -725,14 +728,13 @@ button {
 
     .trending__card__title {
         font-size: 18px;
-        line-height: 26px;
     }
-    .trending__bottom__shop__btn{
+
+    .trending__bottom__shop__btn {
         max-width: 70px;
         width: 100%;
         padding: 13px 17px 12px 18px;
         font-size: 14px;
-        ;line-height: 20px;
     }
 }
 
@@ -754,7 +756,6 @@ button {
 .popular__title {
     font-size: 27px;
     font-weight: 400;
-    line-height: 39.69px;
     color: #1A1A1A;
     margin-bottom: 50px;
 }
@@ -779,14 +780,12 @@ button {
 .popular_card__heading {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #B13D03;
 }
 
 .popular__card__title {
     font-size: 20px;
     font-weight: 400;
-    line-height: 29.4px;
     color: #1A1A1A;
     margin-bottom: 30px;
 }
@@ -794,7 +793,6 @@ button {
 .popular__card__text {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #1A1A1A;
 }
 
@@ -814,14 +812,12 @@ button {
 .popular__card__mini__img__text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #757575;
 }
 
 .popular__card__discount {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #047D48;
 }
 
@@ -836,7 +832,6 @@ button {
 
     .popular__title {
         font-size: 24px;
-        line-height: 35px;
     }
 
     .popular__card__mini__img__text {
@@ -849,7 +844,6 @@ button {
 
     .popular__card__title {
         font-size: 18px;
-        line-height: 26px;
         margin-bottom: 30px;
     }
 
@@ -874,7 +868,6 @@ button {
 
     .popular__title {
         font-size: 20px;
-        line-height: 29px;
         margin-bottom: 40px;
     }
 
@@ -917,7 +910,6 @@ button {
 .dresses__title {
     font-size: 54px;
     font-weight: 500;
-    line-height: 70.22px;
     color: #191919;
     margin-bottom: 40px;
 }
@@ -928,7 +920,6 @@ button {
     margin-bottom: 50px;
     font-size: 22px;
     font-weight: 300;
-    line-height: 32.34px;
     color: #333333;
 }
 
@@ -950,12 +941,10 @@ button {
 
     .dresses__title {
         font-size: 42px;
-        line-height: 54px;
     }
 
     .dresse__text {
         font-size: 18px;
-        line-height: 26px;
         max-width: 281px;
     }
 
@@ -976,7 +965,6 @@ button {
 
     .dresses__title {
         font-size: 32px;
-        line-height: 41px;
         text-align: center;
         max-width: 343px;
         width: 100%;
@@ -986,7 +974,6 @@ button {
 
     .dresse__text {
         font-size: 16px;
-        line-height: 23px;
         max-width: 252px;
         margin: auto;
         text-align: center;
@@ -1031,7 +1018,6 @@ button {
 .featured__title {
     font-size: 22px;
     font-weight: 500;
-    line-height: 32.34px;
     color: #191919;
     margin-bottom: 50px;
 }
@@ -1039,7 +1025,6 @@ button {
 .featured__nav__link {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #474747;
     text-decoration: none;
 }
@@ -1051,12 +1036,10 @@ button {
 
     .featured__title {
         font-size: 20px;
-        line-height: 29px;
     }
 
     .featured__nav__link {
         font-size: 16px;
-        line-height: 23px;
     }
 }
 
@@ -1079,18 +1062,17 @@ button {
 
     .featured__title {
         font-size: 20px;
-        line-height: 29px;
         margin-bottom: 0;
         cursor: pointer;
     }
-    .featured__nav__list{
+
+    .featured__nav__list {
         gap: 20px;
         padding-left: 20px;
     }
 
     .featured__nav__link {
         font-size: 14px;
-        line-height: 20px;
     }
 }
 
@@ -1141,7 +1123,6 @@ button {
 .footer__nav__title {
     font-size: 22px;
     font-weight: 500;
-    line-height: 32.34px;
     color: white;
     margin-bottom: 50px;
 }
@@ -1153,7 +1134,6 @@ button {
 .footer__nav__link {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #D1D1D1;
     text-decoration: none;
 }
@@ -1180,7 +1160,6 @@ button {
 .your__email__tex {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #323232;
 }
 
@@ -1212,7 +1191,6 @@ button {
 .footer__bottom__text {
     font-size: 20px;
     font-weight: 400;
-    line-height: 29.4px;
     color: white;
 }
 
@@ -1238,6 +1216,21 @@ button {
     border-bottom: 1px solid white;
 }
 
+.foter__email {
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.foter__email::placeholder {
+    font-size: 20px;
+    font-weight: 500;
+}
+.your__email__img_2{
+    width: 14px;
+
+}
+
 @media(max-width:1280px) {
     .footer {
         padding-top: 40px;
@@ -1245,7 +1238,6 @@ button {
 
     .footer__nav__title {
         font-size: 20px;
-        line-height: 29px;
     }
 
     .footer__nav__list {
@@ -1254,12 +1246,10 @@ button {
 
     .footer__nav__link {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .footer__bottom__text {
         font-size: 18px;
-        line-height: 26px;
     }
 
     .footer__bottom__icon__box {
@@ -1288,12 +1278,10 @@ button {
 
     .footer__nav__title {
         font-size: 18px;
-        line-height: 26px;
     }
 
     .footer__nav__link {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .mb-40px {
@@ -1306,7 +1294,6 @@ button {
 
     .your__email__tex {
         font-size: 18px;
-        line-height: 26px;
     }
 
     .footer__bottom {
@@ -1331,7 +1318,6 @@ button {
 
     .footer__bottom__text {
         font-size: 18px;
-        line-height: 26px;
     }
 }
 
@@ -1376,7 +1362,6 @@ button {
 .store__top__title {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     text-align: center;
     border-bottom: 1px solid #454545;
     color: #454545;
@@ -1397,7 +1382,6 @@ button {
 .store__left__title {
     font-size: 27px;
     font-weight: 400;
-    line-height: 39.69px;
     color: #191919;
     margin-bottom: 51px;
 }
@@ -1415,7 +1399,6 @@ button {
 .store__nav__link {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #191919;
     text-decoration: none;
 }
@@ -1427,10 +1410,12 @@ button {
     height: 30px;
     overflow: hidden;
 }
-#store__box{
+
+#store__box {
     height: 29px;
     overflow: hidden;
 }
+
 .store__left__sale__box__top {
     max-width: 239px;
     width: 100%;
@@ -1447,7 +1432,6 @@ button {
 .store__left__sale__box__title {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #191919;
 }
 
@@ -1461,10 +1445,12 @@ button {
     justify-content: center;
     transition: all .3s;
 }
-.active__btn{
+
+.active__btn {
     transform: rotate(180deg);
     transition: all .3s;
 }
+
 .color__botom {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -1482,7 +1468,6 @@ button {
 .store__left__color__box__inp__box>label {
     font-size: 18px;
     font-weight: 400;
-    line-height: 27px;
     color: #101828;
 }
 
@@ -1547,7 +1532,6 @@ button {
 .color__box__text {
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
     color: #101828;
 }
 
@@ -1580,7 +1564,8 @@ button {
 .md-hid {
     display: none;
 }
-.store__left__close__btn{
+
+.store__left__close__btn {
     display: block;
     border: none;
     background-color: transparent;
@@ -1589,13 +1574,14 @@ button {
     margin-left: auto;
     margin-bottom: 10px;
 }
-.store__left__close__btn{
+
+.store__left__close__btn {
     display: none;
 }
+
 @media(max-width:1280px) {
     .store__left__title {
         font-size: 24px;
-        line-height: 35px;
     }
 
     .store__nav__list {
@@ -1604,7 +1590,6 @@ button {
 
     .store__nav__link {
         font-size: 18px;
-        line-height: 26px;
     }
 
     .store__left__sale__box__title {
@@ -1614,7 +1599,6 @@ button {
     .store__left__color__box__inp__box>label {
         font-size: 16px;
         font-weight: 400;
-        line-height: 24px;
         color: #101828;
     }
 
@@ -1684,7 +1668,6 @@ button {
     .new__title {
         font-size: 20px;
         font-weight: 500;
-        line-height: 29.4px;
         margin-bottom: 50px;
         color: #1A1A1A;
     }
@@ -1699,7 +1682,6 @@ button {
     .store__nav__item {
         font-size: 18px;
         font-weight: 400;
-        line-height: 26.46px;
     }
 
     .store__center {
@@ -1713,7 +1695,6 @@ button {
     .store__cenrer__title {
         font-size: 16px;
         font-weight: 500;
-        line-height: 23.52px;
         color: #8C8C8C;
     }
 
@@ -1728,7 +1709,6 @@ button {
         border: 1px solid #474747;
         font-size: 14px;
         font-weight: 400;
-        line-height: 20.58px;
         text-align: center;
         color: #333333;
     }
@@ -1743,7 +1723,7 @@ button {
 }
 
 .shop__container {
-    max-width: 1280px;
+    max-width: 1158px;
     width: 100%;
     margin: auto;
     display: flex;
@@ -1804,7 +1784,6 @@ button {
 .shop__right__heading {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #191919;
     margin-bottom: 30px;
 }
@@ -1812,7 +1791,6 @@ button {
 .shop__right__title {
     font-size: 32px;
     font-weight: 400;
-    line-height: 47.04px;
     color: #191919;
     margin-bottom: 20px;
 }
@@ -1820,7 +1798,6 @@ button {
 .shop__right__subtitle {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #191919;
     margin-bottom: 40px;
 }
@@ -1828,7 +1805,6 @@ button {
 .shop__title__price {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #191919;
     margin-bottom: 50px;
 }
@@ -1847,14 +1823,12 @@ button {
 .select__size__box__title {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #191919;
 }
 
 .select__size__box__text {
     font-size: 18px;
     font-weight: 500;
-    line-height: 26.46px;
     color: #757575;
 }
 
@@ -1877,7 +1851,6 @@ button {
     justify-content: center;
     font-size: 20px;
     font-weight: 400;
-    line-height: 29.4px;
     color: #1a1a1a;
 }
 
@@ -1897,7 +1870,6 @@ button {
     border: none;
     font-size: 24px;
     font-weight: 500;
-    line-height: 35.28px;
     color: white;
 }
 
@@ -1920,7 +1892,6 @@ button {
 .shop__right__shipping__title {
     font-size: 20px;
     font-weight: 500;
-    line-height: 29.4px;
     color: #1A1A1A;
     margin-bottom: 30px;
 }
@@ -1928,7 +1899,6 @@ button {
 .shop__right__shipping__text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #1A1A1A;
 }
 
@@ -1942,7 +1912,6 @@ button {
     display: block;
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     text-decoration: none;
     color: #1A1A1A;
     border-bottom: 1px solid #1A1A1A;
@@ -1956,17 +1925,15 @@ button {
     justify-content: space-between;
     margin-bottom: 40px;
 }
-.shop__reveiew__box{
-    
-}
-.shop__box__active{
+
+.shop__box__active {
     height: 29px;
     overflow: hidden;
 }
+
 .shop_reveiew__title {
     font-size: 22px;
     font-weight: 400;
-    line-height: 32.34px;
     color: #1a1a1a;
 }
 
@@ -1980,7 +1947,8 @@ button {
     justify-content: center;
     transition: all .3s;
 }
-.shop__reveiew__btn__active{
+
+.shop__reveiew__btn__active {
     transform: rotate(180deg);
     transition: all .3s;
 
@@ -1995,7 +1963,6 @@ button {
 .reveiew__coment__title {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #1a1a1a;
     margin-bottom: 15px;
 }
@@ -2003,7 +1970,6 @@ button {
 .reveiew__coment__text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #1a1a1a;
 }
 
@@ -2023,7 +1989,6 @@ button {
 .reveiew__coment__star__text {
     font-size: 18px;
     font-weight: 400;
-    line-height: 26.46px;
     color: #8c8c8c;
 }
 
@@ -2065,12 +2030,10 @@ button {
 
     .shop__right__title {
         font-size: 27px;
-        line-height: 39px;
     }
 
     .shop__right__subtitle {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .select__size__box {
@@ -2085,14 +2048,12 @@ button {
         width: 100%;
         padding: 18px 34px 18px 34px;
         font-size: 18px;
-        line-height: 23px;
     }
 
     .add__bag__btn {
         max-width: 293px;
         padding: 25px 87px 25px 87px;
         font-size: 20px;
-        line-height: 29px;
     }
 
     .shop__righgt__heart__btn {
@@ -2102,19 +2063,16 @@ button {
 
     .shop__right__shipping__title {
         font-size: 18px;
-        line-height: 26px;
         margin-bottom: 25px;
     }
 
     .shop__right__shipping__text {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .shop__right__shipping__link {
         max-width: 92px;
         font-size: 16px;
-        line-height: 23px;
         margin-bottom: 50px;
     }
 
@@ -2128,22 +2086,18 @@ button {
 
     .shop_reveiew__title {
         font-size: 22px;
-        line-height: 29px;
     }
 
     .reveiew__coment__title {
         font-size: 16px;
-        line-height: 26px;
     }
 
     .reveiew__coment__star__text {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .reveiew__coment__text {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .reveiew__coment__center {
@@ -2179,14 +2133,12 @@ button {
 
     .shop__right__heading {
         font-size: 16px;
-        line-height: 23px;
         margin-bottom: 25px;
         width: 100%;
     }
 
     .shop__right__title {
         font-size: 22px;
-        line-height: 32px;
         margin-bottom: 20px;
     }
 
@@ -2196,7 +2148,6 @@ button {
 
     .shop__title__price {
         font-size: 20px;
-        line-height: 29px;
         margin-bottom: 30px;
     }
 
@@ -2236,17 +2187,14 @@ button {
 
     .select__size__box__title {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .select__size__box__title {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .select__size__box__title {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .select__size__box__bottom {
@@ -2271,18 +2219,16 @@ button {
         max-width: 273px;
         width: 100%;
         font-size: 20px;
-        line-height: 29.4px;
         padding: 23px 79px 23px 79px;
     }
+
     .shop__right__shipping__title {
         font-size: 16px;
-        line-height: 23px;
         margin-bottom: 20px;
     }
 
     .shop__right__shipping__text {
         font-size: 14px;
-        line-height: 20px;
     }
 
     .shop__mb__40px {
@@ -2291,7 +2237,6 @@ button {
 
     .shop__right__shipping__link {
         font-size: 16px;
-        line-height: 23px;
     }
 
     .shop__reveiew__top {
@@ -2300,16 +2245,12 @@ button {
 
     .shop_reveiew__title {
         font-size: 18px;
-        line-height: 26px;
     }
 
-    .reveiew__coment__title {
-        line-height: 23px;
-    }
+    .reveiew__coment__title {}
 
     .reveiew__coment__star__text {
         font-size: 14px;
-        line-height: 20px;
     }
 
     .reveiew__coment__center {
@@ -2318,7 +2259,6 @@ button {
 
     .reveiew__coment__text {
         font-size: 14px;
-        line-height: 20px;
     }
 
     .shop__cament__container {
