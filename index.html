@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- public css link -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- animated css link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- swiper css link -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Home</title>
 </head>
@@ -12,63 +18,69 @@
 <body>
     <!-- header start -->
     <header class="header">
-        <div class="header__top__bc">
-            <div class="header__top">
-                <ul class="header__top__nav__list">
-                    <li class="header__top__nav__item">
-                        <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+        <div data-wow-duration="2s" class="wow animate__animated animate__backInDown header__animate">
+            <div class="header__top__bc">
+                <div class="header__top">
+                    <ul class="header__top__nav__list">
+                        <li class="header__top__nav__item">
+                            <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__container">
+                <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
+                        class="header__logo" /></a>
+                <ul class="header__nav__list">
+                    <li class="header_nav__item">
+                        <a href="./index.html" class="header__nav__link header__nav__link_121px"><span
+                                class="header__nav__link__line"></span> New & Featured</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_32px"><span
+                                class="header__nav__link__line"></span> Men</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_57px"><span
+                                class="header__nav__link__line"></span> Women</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link">Sign In</a>
+                    <li class="header_nav__item">
+                        <a href="./store.html" class="header__nav__link header__nav__link_34px"><span
+                                class="header__nav__link__line"></span> Sale</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="header__container">
-            <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
-                    class="header__logo" /></a>
-            <ul class="header__nav__list">
-                <li class="header_nav__item">
-                    <a href="./index.html" class="header__nav__link">New & Featured</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Men</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Women</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="./store.html" class="header__nav__link">Sale</a>
-                </li>
-            </ul>
-            <div class="header__right">
-                <div class="search__box">
-                    <button class="search__btn">
-                        <img src="./img/header/search.svg" alt="" class="search__img" />
-                    </button>
-                    <input type="text" class="header__search__inp" placeholder="Search" />
-                </div>
-                <div class="header__right__btn__box">
-                    <button class="heart__btn">
-                        <img src="./img/header/heart.svg" alt="" class="heart__img" />
-                    </button>
-                    <a href="./shop.html" class="shopping__btn">
-                        <img src="./img/header/shop.svg" alt="" class="shopping__img" />
-                    </a>
-                    <button class="header__hamburger__btn">
-                        <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                    </button>
+                <div class="header__right">
+                    <div class="search__box">
+                        <button class="search__btn">
+                            <img src="./img/header/search.svg" alt="" class="search__img" />
+                        </button>
+                        <input type="text" class="header__search__inp" placeholder="Search" />
+                    </div>
+                    <div class="header__right__btn__box">
+                        <button class="heart__btn">
+                            <img src="./img/header/heart.svg" alt="" class="heart__img" />
+                        </button>
+                        <a href="./shop.html" class="shopping__btn">
+                            <img src="./img/header/shop.svg" alt="" class="shopping__img" />
+                        </a>
+                        <button class="header__hamburger__btn">
+                            <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -108,13 +120,12 @@
     </header>
     <!-- header end -->
     <!-- hero start -->
-    <section class="hero">
+    <section data-wow-duration="2s" data-wow-duration="2s" class="hero wow animate__animated animate__backInUp">
         <div class="hero__container">
-          <div class="hero__swiper">
-            <div class="swiper mySwiper">
+            <div class="hero__swiper swiper mySwiper">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
-                        <div class="hero__text__box">
+                        <div class="hero__text__box hero__hidden">
                             <h1 class="hero__title">Denim Collection</h1>
                             <p class="hero__text">
                                 An enigmatic and contemporary collection that exalts nautical style
@@ -122,12 +133,17 @@
                             </p>
                             <div class="hero__bottom">
                                 <a href="#" class="hero__view_link">View Collection</a>
-                                <button class="hero__buy_btn">Buy Now</button>
+                                <button class="hero__buy_btn">
+                                    <span class="line_1"></span>
+                                    <span class="line_2"></span>
+                                    <span class="line_3"></span>
+                                    <span class="line_4"></span>
+                                    Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="hero__text__box">
+                        <div class="hero__text__box hero__hidden">
                             <h1 class="hero__title">Denim Collection</h1>
                             <p class="hero__text">
                                 An enigmatic and contemporary collection that exalts nautical style
@@ -135,12 +151,17 @@
                             </p>
                             <div class="hero__bottom">
                                 <a href="#" class="hero__view_link">View Collection</a>
-                                <button class="hero__buy_btn">Buy Now</button>
+                                <button class="hero__buy_btn">
+                                    <span class="line_1"></span>
+                                    <span class="line_2"></span>
+                                    <span class="line_3"></span>
+                                    <span class="line_4"></span>
+                                    Buy Now</button>
                             </div>
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="hero__text__box">
+                        <div class="hero__text__box hero__hidden">
                             <h1 class="hero__title">Denim Collection</h1>
                             <p class="hero__text">
                                 An enigmatic and contemporary collection that exalts nautical style
@@ -148,28 +169,19 @@
                             </p>
                             <div class="hero__bottom">
                                 <a href="#" class="hero__view_link">View Collection</a>
-                                <button class="hero__buy_btn">Buy Now</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="hero__text__box">
-                            <h1 class="hero__title">Denim Collection</h1>
-                            <p class="hero__text">
-                                An enigmatic and contemporary collection that exalts nautical style
-                                through meticulous fabrics, prints, and precise forms.
-                            </p>
-                            <div class="hero__bottom">
-                                <a href="#" class="hero__view_link">View Collection</a>
-                                <button class="hero__buy_btn">Buy Now</button>
+                                <button class="hero__buy_btn">
+                                    <span class="line_1"></span>
+                                    <span class="line_2"></span>
+                                    <span class="line_3"></span>
+                                    <span class="line_4"></span>
+                                    Buy Now</button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="swiper-pagination"></div>
+                <div class="swiper-pagination hero__swiper__pagination"></div>
             </div>
-          </div>
-            <div class="hero__text__box hero__hidden">
+            <div id="hero__text__box__responsive" class="hero__text__box hero__hidden">
                 <h1 class="hero__title">Denim Collection</h1>
                 <p class="hero__text">
                     An enigmatic and contemporary collection that exalts nautical style
@@ -177,36 +189,49 @@
                 </p>
                 <div class="hero__bottom">
                     <a href="#" class="hero__view_link">View Collection</a>
-                    <button class="hero__buy_btn">Buy Now</button>
+                    <button class="hero__buy_btn">
+                        <span class="line_1"></span>
+                        <span class="line_2"></span>
+                        <span class="line_3"></span>
+                        <span class="line_4"></span>
+                        Buy Now</button>
                 </div>
             </div>
         </div>
-    </section>
+    </section>  
     <!-- hero end -->
     <!-- trending start -->
     <section class="trending">
-        <div class="trending__container">
+        <div data-wow-duration="2s" class="trending__container">
             <h2 class="trending__title">Trending</h2>
             <div class="trending__card__box">
-                <div class="trending_card">
-                    <img src="./img/trending/trending-1.png" alt="" class="trending__img" />
+                <div data-wow-duration="2s" class="trending_card wow animate__animated animate__slideInLeft">
+                    <div class="trending__img__box">
+                        <img src="./img/trending/trending-1.png" alt="" class="trending__img" />
+                    </div>
                     <h3 class="trending__card__title">New from Jordan</h3>
                 </div>
-                <div class="trending_card">
-                    <img src="./img/trending/trending-2.png" alt="" class="trending__img" />
+                <div data-wow-duration="2s" class="trending_card wow animate__animated animate__zoomIn">
+                    <div class="trending__img__box">
+                        <img src="./img/trending/trending-2.png" alt="" class="trending__img" />
+                    </div>
                     <h3 class="trending__card__title">Trail Running Essentials</h3>
                 </div>
-                <div class="trending_card">
-                    <img src="./img/trending/trending-3.png" alt="" class="trending__img" />
+                <div data-wow-duration="2s" class="trending_card wow animate__animated animate__slideInRight">
+                    <div class="trending__img__box">
+                        <img src="./img/trending/trending-3.png" alt="" class="trending__img" />
+                    </div>
                     <h3 class="trending__card__title">Tourney-Ready Gear</h3>
                 </div>
             </div>
-            <div class="trending__bottom">
-                <div class="ternding__bottom__card trending__card__bg">
+            <div class="trending__bottom ">
+                <div data-wow-duration="2s"
+                    class="ternding__bottom__card wow animate__animated animate__slideInLeft trending__card__bg">
                     <h4 class="trending__bottom__title">Reversible Denim Jacket</h4>
                     <button class="trending__bottom__shop__btn">Shop</button>
                 </div>
-                <div class="ternding__bottom__card trending__card__bg_2">
+                <div data-wow-duration="2s"
+                    class="ternding__bottom__card wow animate__animated animate__slideInRight trending__card__bg_2">
                     <h4 class="trending__bottom__title">Reversible Denim Jacket</h4>
                     <button class="trending__bottom__shop__btn">Shop</button>
                 </div>
@@ -217,15 +242,16 @@
     <!-- popular start -->
     <section class="popular">
         <div class="popular__container">
-            <h1 class="popular__title">Popular right now</h1>
+            <h1 data-wow-duration="2s" class="popular__title wow animate__animated animate__slideInDown">Popular right
+                now</h1>
             <div class="popular__card__box">
-                <div class="popular__card">
+                <div data-wow-duration="2s" class="popular__card wow animate__animated animate__slideInDown">
                     <img src="./img/popular/big-imgs/big-1.png" alt="" class="popular__img" />
                     <h2 class="popular_card__heading">Just In</h2>
                     <h3 class="popular__card__title">Nike Tech Fleece Windrunner</h3>
                     <p class="popular__card__text">$145</p>
                 </div>
-                <div class="popular__card">
+                <div data-wow-duration="2s" class="popular__card wow animate__animated animate__slideInUp">
                     <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img" />
                     <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
                         <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt="" class="popular__mini__img" />
@@ -238,9 +264,11 @@
                         Nike Tech Fleece Windrunner
                     </h3>
                     <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                    <a href="#" class="popular__card__link">
+                        <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                    </a>
                 </div>
-                <div class="popular__card">
+                <div data-wow-duration="2s" class="popular__card wow animate__animated animate__slideInDown">
                     <img src="./img/popular/big-imgs/big-3.png" alt="" class="popular__img" />
                     <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
                         <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt="" class="popular__mini__img" />
@@ -254,7 +282,7 @@
                     </h3>
                     <p class="popular__card__text">$145</p>
                 </div>
-                <div class="popular__card">
+                <div data-wow-duration="2s" class="popular__card wow animate__animated animate__slideInUp">
                     <img src="./img/popular/big-imgs/big-4.png" alt="" class="popular__img" />
                     <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
                         <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt="" class="popular__mini__img" />
@@ -273,7 +301,7 @@
     </section>
     <!-- popular end -->
     <!-- dresses start -->
-    <section class="dresses">
+    <section data-wow-duration="2s" class="dresses wow animate__animated animate__backInUp">
         <div class="dresses_container">
             <div class="dresses__left">
                 <h2 class="dresses__title">
@@ -295,10 +323,17 @@
     </section>
     <!-- dresses end -->
     <!-- featured start -->
-    <section class="featured">
+    <section data-wow-duration="2s" class="featured wow animate__animated animate__backInUp">
         <div class="featured__container">
             <div class="featured__list__box">
-                <h2 class="featured__title">Featured</h2>
+                <h2 class="featured__title">
+                    Featured
+                    <svg class="featured__svg" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </h2>
                 <ul class="featured__nav__list">
                     <li class="featured__nav__iten">
                         <a href="#" class="featured__nav__link">Sneakers Model 1</a>
@@ -321,7 +356,15 @@
                 </ul>
             </div>
             <div class="featured__list__box">
-                <h2 class="featured__title">Shoes</h2>
+                <h2 class="featured__title">
+                    Shoes
+                    <svg class="featured__svg" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+
+                </h2>
                 <ul class="featured__nav__list">
                     <li class="featured__nav__iten">
                         <a href="#" class="featured__nav__link">Black Crew Master</a>
@@ -344,7 +387,14 @@
                 </ul>
             </div>
             <div class="featured__list__box">
-                <h2 class="featured__title">Clothing</h2>
+                <h2 class="featured__title">
+                    Clothing
+                    <svg class="featured__svg" width="14" height="8" viewBox="0 0 14 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </h2>
                 <ul class="featured__nav__list">
                     <li class="featured__nav__iten">
                         <a href="#" class="featured__nav__link">Pegasus</a>
@@ -428,6 +478,7 @@
         </div>
     </footer>
     <!-- footer end -->
+    <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
@@ -435,6 +486,13 @@
                 el: ".swiper-pagination",
             },
         });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
     </script>
     <script src="./js/app.js"></script>
 </body>

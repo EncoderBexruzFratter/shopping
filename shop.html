@@ -5,69 +5,79 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <title>Shop</title>
 </head>
 
 <body>
     <!-- header start -->
     <header class="header">
-        <div class="header__top__bc">
-            <div class="header__top">
-                <ul class="header__top__nav__list">
-                    <li class="header__top__nav__item">
-                        <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+        <div data-wow-duration="2s" class="wow animate__animated animate__backInDown header__animate">
+            <div class="header__top__bc">
+                <div class="header__top">
+                    <ul class="header__top__nav__list">
+                        <li class="header__top__nav__item">
+                            <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__container">
+                <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
+                        class="header__logo" /></a>
+                <ul class="header__nav__list">
+                    <li class="header_nav__item">
+                        <a href="./index.html" class="header__nav__link header__nav__link_121px"><span
+                                class="header__nav__link__line"></span> New & Featured</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_32px"><span
+                                class="header__nav__link__line"></span> Men</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_57px"><span
+                                class="header__nav__link__line"></span> Women</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link">Sign In</a>
+                    <li class="header_nav__item">
+                        <a href="./store.html" class="header__nav__link header__nav__link_34px"><span
+                                class="header__nav__link__line"></span> Sale</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="header__container">
-            <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
-                    class="header__logo" /></a>
-            <ul class="header__nav__list">
-                <li class="header_nav__item">
-                    <a href="./index.html" class="header__nav__link">New & Featured</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Men</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Women</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="./store.html" class="header__nav__link">Sale</a>
-                </li>
-            </ul>
-            <div class="header__right">
-                <div class="search__box">
-                    <button class="search__btn">
-                        <img src="./img/header/search.svg" alt="" class="search__img" />
-                    </button>
-                    <input type="text" class="header__search__inp" placeholder="Search" />
-                </div>
-                <div class="header__right__btn__box">
-                    <button class="heart__btn">
-                        <img src="./img/header/heart.svg" alt="" class="heart__img" />
-                    </button>
-                    <a href="./shop.html" class="shopping__btn">
-                        <img src="./img/header/shop.svg" alt="" class="shopping__img" />
-                    </a>
-                    <button class="header__hamburger__btn">
-                        <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                    </button>
+                <div class="header__right">
+                    <div class="search__box">
+                        <button class="search__btn">
+                            <img src="./img/header/search.svg" alt="" class="search__img" />
+                        </button>
+                        <input type="text" class="header__search__inp" placeholder="Search" />
+                    </div>
+                    <div class="header__right__btn__box">
+                        <button class="heart__btn">
+                            <img src="./img/header/heart.svg" alt="" class="heart__img" />
+                        </button>
+                        <a href="./shop.html" class="shopping__btn">
+                            <img src="./img/header/shop.svg" alt="" class="shopping__img" />
+                        </a>
+                        <button class="header__hamburger__btn">
+                            <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -126,6 +136,40 @@
                 <h2 class="shop__right__title">Air Jordan 1 Low</h2>
                 <h3 class="shop__right__subtitle">Men’s Shoes</h3>
                 <p class="shop__title__price">$145</p>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__big.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_1.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_2.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_3.svg" />
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+                <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__big.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_1.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_2.svg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/shop/shop__right__mini_3.svg" />
+                        </div>
+                    </div>
+                </div>
                 <div class="shop__right__img__box">
                     <div class="shop__right__img__box__top">
                         <img src="./img/shop/shop__right__big.svg" alt="" class="shop__right__img__box__top__img">
@@ -185,9 +229,11 @@
                     <div class="shop__reveiew__top">
                         <h4 class="shop_reveiew__title">Reviews (691)</h4>
                         <button class="shop__reveiew__btn">
-                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 7L7 1L1 7" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg>
+                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
                         </button>
                     </div>
                     <div class="shop__cament__container">
@@ -347,7 +393,9 @@
                         Nike Tech Fleece Windrunner
                     </h3>
                     <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                    <a href="#" class="popular__card__link">
+                        <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                    </a>
                 </div>
                 <div class="popular__card">
                     <img src="./img/popular/big-imgs/big-3.png" alt="" class="popular__img" />
@@ -440,6 +488,31 @@
         </div>
     </footer>
     <!-- footer end -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+    var swiper2 = new Swiper(".mySwiper2", {
+      spaceBetween: 10,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      thumbs: {
+        swiper: swiper,
+      },
+    });
+  </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+        integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="./js/shop.js"></script>
 </body>
 

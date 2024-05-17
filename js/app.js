@@ -7,24 +7,49 @@ let header__hamburger__menu = document.querySelector(
 );
 
 hamburger__btn.addEventListener("click", function () {
-  header__hamburger__menu.style.display = "block";
+  header__hamburger__menu.classList.add("header__hamburger__menu__active")
 });
 hamburger__menu_close.addEventListener("click", function () {
-  header__hamburger__menu.style.display = "none";
+  header__hamburger__menu.classList.remove("header__hamburger__menu__active")
 });
 
 let featured__list__box = document.querySelectorAll(".featured__list__box");
 let featured__title = document.querySelectorAll(".featured__title");
 
-featured__list__box.forEach(function (item, index) {
-  item.addEventListener("click", function () {
-    featured__list__box.forEach(function (item, index) {
-      item.style.height = "29px";
-    });
-    featured__list__box[index].style.height = "auto";
-    featured__title.forEach(function(item , index){
-        item.style.marginBottom = "0px"
+
+featured__list__box.forEach(function(item , index){
+  item.addEventListener("click" , function(){
+    featured__list__box.forEach(function(item){
+      item.classList.remove("featured__active")
     })
-    featured__title[index].style.marginBottom = "30px"
-  });
-});
+    featured__list__box[index].classList.add("featured__active")
+    if(featured__list__box[index].computedStyleMap.height = "298ppx"){
+      let featured__active = document.querySelector(".featured__active")
+      featured__active.addEventListener('click' , function(){
+        featured__list__box[index].classList.remove("featured__active")
+      })
+    }
+  })
+})
+
+
+// featured__list__box.forEach(function (item, index) {
+//   item.addEventListener("click", function () {
+//     featured__list__box.forEach(function (item, index) {
+//       item.style.height = "29px";
+//       item.classList.remove("featured__active")
+//     });
+//     featured__list__box[index].style.height = "298px";
+//     featured__list__box[index].classList.add("featured__active")
+//     let featured__active = document.querySelector(".featured_active")
+//     if(featured__list__box[index].style.height = "298px"){
+//       featured__active.addEventListener("click" , function(){
+//         featured__list__box[index].style.height = "29px"
+//       })
+//     }
+//     featured__title.forEach(function(item , index){
+//         item.style.marginBottom = "0px"
+//     })
+//     featured__title[index].style.marginBottom = "30px"
+//   });
+// });

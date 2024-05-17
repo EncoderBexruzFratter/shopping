@@ -5,68 +5,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <title>Store</title>
 </head>
 
 <body>
     <!-- header start -->
     <header class="header">
-        <div class="header__top__bc">
-            <div class="header__top">
-                <ul class="header__top__nav__list">
-                    <li class="header__top__nav__item">
-                        <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+        <div data-wow-duration="2s" class="wow animate__animated animate__backInDown header__animate">
+            <div class="header__top__bc">
+                <div class="header__top">
+                    <ul class="header__top__nav__list">
+                        <li class="header__top__nav__item">
+                            <a href="./store.html" class="header__top__nav__link border__left-1">Find a store</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                        </li>
+                        <li class="header__top__nav__item">
+                            <a href="#" class="header__top__nav__link">Sign In</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__container">
+                <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
+                        class="header__logo" /></a>
+                <ul class="header__nav__list">
+                    <li class="header_nav__item">
+                        <a href="./index.html" class="header__nav__link header__nav__link_121px"><span
+                                class="header__nav__link__line"></span> New & Featured</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Help</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_32px"><span
+                                class="header__nav__link__line"></span> Men</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link border__left-1">Join Us</a>
+                    <li class="header_nav__item">
+                        <a href="#" class="header__nav__link header__nav__link_57px"><span
+                                class="header__nav__link__line"></span> Women</a>
                     </li>
-                    <li class="header__top__nav__item">
-                        <a href="#" class="header__top__nav__link">Sign In</a>
+                    <li class="header_nav__item">
+                        <a href="./store.html" class="header__nav__link header__nav__link_34px"><span
+                                class="header__nav__link__line"></span> Sale</a>
                     </li>
                 </ul>
-            </div>
-        </div>
-        <div class="header__container">
-            <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
-                    class="header__logo" /></a>
-            <ul class="header__nav__list">
-                <li class="header_nav__item">
-                    <a href="./index.html" class="header__nav__link">New & Featured</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Men</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="#" class="header__nav__link">Women</a>
-                </li>
-                <li class="header_nav__item">
-                    <a href="./store.html" class="header__nav__link">Sale</a>
-                </li>
-            </ul>
-            <div class="header__right">
-                <div class="search__box">
-                    <button class="search__btn">
-                        <img src="./img/header/search.svg" alt="" class="search__img" />
-                    </button>
-                    <input type="text" class="header__search__inp" placeholder="Search" />
-                </div>
-                <div class="header__right__btn__box">
-                    <button class="heart__btn">
-                        <img src="./img/header/heart.svg" alt="" class="heart__img" />
-                    </button>
-                    <a href="./shop.html" class="shopping__btn">
-                        <img src="./img/header/shop.svg" alt="" class="shopping__img" />
-                    </a>
-                    <button class="header__hamburger__btn">
-                        <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                            <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
-                        </svg>
-                    </button>
+                <div class="header__right">
+                    <div class="search__box">
+                        <button class="search__btn">
+                            <img src="./img/header/search.svg" alt="" class="search__img" />
+                        </button>
+                        <input type="text" class="header__search__inp" placeholder="Search" />
+                    </div>
+                    <div class="header__right__btn__box">
+                        <button class="heart__btn">
+                            <img src="./img/header/heart.svg" alt="" class="heart__img" />
+                        </button>
+                        <a href="./shop.html" class="shopping__btn">
+                            <img src="./img/header/shop.svg" alt="" class="shopping__img" />
+                        </a>
+                        <button class="header__hamburger__btn">
+                            <svg width="26px" height="26px" viewBox="0 0 18 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M17 1L1 1" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 6L1 6" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                                <path d="M17 11L1 11" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -74,23 +83,32 @@
             <div class="hamburger__menu__container">
                 <div class="header__hamburger__menu__top">
                     <a href="#" class="header__logo__link"><img src="./img/header/header__logo.svg" alt=""
-                        class="header__logo__res" /></a>
-                        <button class="hamburger__menu__close__btn">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                              </svg>
-                              
-                        </button>
+                            class="header__logo__res" /></a>
+                    <button class="hamburger__menu__close__btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                        </svg>
+
+                    </button>
                 </div>
                 <ul class="header__hamburger__menu__list">
-                    <li><a href="./index.html" class="header__hamburger__menu__link ham__w-136"><span class="header__hamburger__menu__link_line"></span> New & Featured</a></li>
-                    <li><a href="#" class="header__hamburger__menu__link ham__w-36"><span class="header__hamburger__menu__link_line"></span> Men</a></li>
-                    <li><a href="#" class="header__hamburger__menu__link ham__w-63"><span class="header__hamburger__menu__link_line"></span> Women</a></li>
-                    <li><a href="./shop.html" class="header__hamburger__menu__link ham__w-37"><span class="header__hamburger__menu__link_line"></span> Sale</a></li>
-                    <li><a href="./store.html" class="header__hamburger__menu__link ham__w-100"><span class="header__hamburger__menu__link_line"></span> Find a store</a></li>
-                    <li><a href="#" class="header__hamburger__menu__link ham__w-38"><span class="header__hamburger__menu__link_line"></span> Help</a></li>
-                    <li><a href="#" class="header__hamburger__menu__link ham__w-62"><span class="header__hamburger__menu__link_line"></span> Join Us</a></li>
-                    <li><a href="#" class="header__hamburger__menu__link ham__w-58"><span class="header__hamburger__menu__link_line"></span> Sign In</a></li>
+                    <li><a href="./index.html" class="header__hamburger__menu__link ham__w-136"><span
+                                class="header__hamburger__menu__link_line"></span> New & Featured</a></li>
+                    <li><a href="#" class="header__hamburger__menu__link ham__w-36"><span
+                                class="header__hamburger__menu__link_line"></span> Men</a></li>
+                    <li><a href="#" class="header__hamburger__menu__link ham__w-63"><span
+                                class="header__hamburger__menu__link_line"></span> Women</a></li>
+                    <li><a href="./shop.html" class="header__hamburger__menu__link ham__w-37"><span
+                                class="header__hamburger__menu__link_line"></span> Sale</a></li>
+                    <li><a href="./store.html" class="header__hamburger__menu__link ham__w-100"><span
+                                class="header__hamburger__menu__link_line"></span> Find a store</a></li>
+                    <li><a href="#" class="header__hamburger__menu__link ham__w-38"><span
+                                class="header__hamburger__menu__link_line"></span> Help</a></li>
+                    <li><a href="#" class="header__hamburger__menu__link ham__w-62"><span
+                                class="header__hamburger__menu__link_line"></span> Join Us</a></li>
+                    <li><a href="#" class="header__hamburger__menu__link ham__w-58"><span
+                                class="header__hamburger__menu__link_line"></span> Sign In</a></li>
                 </ul>
             </div>
         </div>
@@ -101,15 +119,16 @@
         <div class="store_container">
             <div class="store__top__bg">
                 <div class="store__top">
-                    <button class="store__arrow__btn">
+                    <button id="store__arrow__btn_1" class="store__arrow__btn">
                         <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.8" d="M8 1L1 8L8 15" stroke="#454545" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
 
                     </button>
-                    <h1 class="store__top__title">Early Access to Spring Sale: Use code SPRING.</h1>
-                    <button class="store__arrow__btn">
+                    <h1 id="store__top__title_left" class="store__top__title">Early Access to Spring Sale: Use code SPRING.</h1>
+                    <h1 id="store__top__title_right" class="store__top__title">Early Access to Spring Sale: Use code SPRING.</h1>
+                    <button id="store__arrow__btn_2" class="store__arrow__btn">
                         <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path opacity="0.8" d="M1 15L8 8L1 1" stroke="#454545" stroke-width="2"
                                 stroke-linecap="round" stroke-linejoin="round" />
@@ -132,418 +151,422 @@
                     Filter
                 </button>
             </div>
-            <div class="store__bottom">
-                <div class="store__left">
-                    <button class="store__left__close__btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                          </svg>
-                    </button>
-                    <h2 class="store__left__title">New Releases (50)</h2>
-                    <ul class="store__nav__list">
-                        <li><a href="#" class="store__nav__link">Tops & T-Shirts</a></li>
-                        <li><a href="#" class="store__nav__link">Shorts</a></li>
-                        <li><a href="#" class="store__nav__link">Hoodies & Pullovers</a></li>
-                        <li><a href="#" class="store__nav__link">Jackets & Vests</a></li>
-                        <li><a href="#" class="store__nav__link">Pants & Tights</a></li>
-                        <li><a href="#" class="store__nav__link">Fleece</a></li>
-                        <li><a href="#" class="store__nav__link">Compression & Baselayer</a></li>
-                        <li><a href="#" class="store__nav__link">Tracksuits</a></li>
-                        <li><a href="#" class="store__nav__link">Socks</a></li>
-                    </ul>
-                    <div id="store__box" class="store__left__sale__box">
-                        <div class="store__left__sale__box__top store__left__sale__box__top__active">
-                            <h3 class="store__left__sale__box__title">Sale & Offfers</h3>
-                            <button class="store__left__sale__box__btn">
-                               <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-                            </button>
-                        </div>
-                        <div class="store__left__color__box__inp__box" style="margin-bottom: 20px;">
-                            <input type="checkbox" name="birxil" id="inp1">
-                            <label for="inp1" class="store__left__sale__box__text">Up to 50% Off</label>
-                        </div>
-                        <div class="store__left__color__box__inp__box">
-                            <input type="checkbox" name="birxil" id="inp2">
-                            <label for="inp2" class="store__left__sale__box__text">Sale</label>
-                        </div>
-                    </div>
-                    <div id="store__box" class="store__left__color__box">
-                        <div class="store__left__sale__box__top store__left__sale__box__top__active">
-                            <h3 class="store__left__sale__box__title">Color</h3>
-                            <button class="store__left__sale__box__btn">
-                               <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-                            </button>
-                        </div>
-                        <div class="color__botom">
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Black"></div>
-                                <p class="color__box__text">Black</p>
+                <div class="store__bottom">
+                    <div data-wow-duration="2s" class="wow animate__animated animate__slideInLeft store__left">
+                        <button class="store__left__close__btn">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                              </svg>
+                        </button>
+                        <h2 class="store__left__title">New Releases (50)</h2>
+                        <ul class="store__nav__list">
+                            <li><a href="#" class="store__nav__link">Tops & T-Shirts</a></li>
+                            <li><a href="#" class="store__nav__link">Shorts</a></li>
+                            <li><a href="#" class="store__nav__link">Hoodies & Pullovers</a></li>
+                            <li><a href="#" class="store__nav__link">Jackets & Vests</a></li>
+                            <li><a href="#" class="store__nav__link">Pants & Tights</a></li>
+                            <li><a href="#" class="store__nav__link">Fleece</a></li>
+                            <li><a href="#" class="store__nav__link">Compression & Baselayer</a></li>
+                            <li><a href="#" class="store__nav__link">Tracksuits</a></li>
+                            <li><a href="#" class="store__nav__link">Socks</a></li>
+                        </ul>
+                        <div id="store__box" class="store__left__sale__box">
+                            <div class="store__left__sale__box__top store__left__sale__box__top__active">
+                                <h3 class="store__left__sale__box__title">Sale & Offfers</h3>
+                                <button class="store__left__sale__box__btn">
+                                   <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+                                </button>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Blue"></div>
-                                <p class="color__box__text">Blue</p>
+                            <div class="store__left__color__box__inp__box" style="margin-bottom: 20px;">
+                                <input type="checkbox" name="birxil" id="inp1">
+                                <label for="inp1" class="store__left__sale__box__text">Up to 50% Off</label>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Brown"></div>
-                                <p class="color__box__text">Brown</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Green"></div>
-                                <p class="color__box__text">Green</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Grey"></div>
-                                <p class="color__box__text">Grey</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Multi"></div>
-                                <p class="color__box__text">
-                                    Multi
-                                    Color
-                                </p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Orange"></div>
-                                <p class="color__box__text">Orange</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Pink"></div>
-                                <p class="color__box__text">Pink</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Purple"></div>
-                                <p class="color__box__text">Purple</p>
+                            <div class="store__left__color__box__inp__box">
+                                <input type="checkbox" name="birxil" id="inp2">
+                                <label for="inp2" class="store__left__sale__box__text">Sale</label>
                             </div>
                         </div>
-
-                    </div>
-                    <div id="store__box" class="store__left__technology">
-                        <div class="store__left__sale__box__top">
-                            <h3 class="store__left__sale__box__title">Technology</h3>
-                            <button class="store__left__sale__box__btn ">
+                        <div id="store__box" class="store__left__color__box">
+                            <div class="store__left__sale__box__top store__left__sale__box__top__active">
+                                <h3 class="store__left__sale__box__title">Color</h3>
+                                <button class="store__left__sale__box__btn">
+                                   <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+                                </button>
+                            </div>
+                            <div class="color__botom">
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Black"></div>
+                                    <p class="color__box__text">Black</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Blue"></div>
+                                    <p class="color__box__text">Blue</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Brown"></div>
+                                    <p class="color__box__text">Brown</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Green"></div>
+                                    <p class="color__box__text">Green</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Grey"></div>
+                                    <p class="color__box__text">Grey</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Multi"></div>
+                                    <p class="color__box__text">
+                                        Multi
+                                        Color
+                                    </p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Orange"></div>
+                                    <p class="color__box__text">Orange</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Pink"></div>
+                                    <p class="color__box__text">Pink</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Purple"></div>
+                                    <p class="color__box__text">Purple</p>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <div id="store__box" class="store__left__technology">
+                            <div class="store__left__sale__box__top">
+                                <h3 class="store__left__sale__box__title">Technology</h3>
+                                <button class="store__left__sale__box__btn ">
+                                    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+                                </button>
+                            </div>
+                              <div class="color__botom">
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Black"></div>
+                                    <p class="color__box__text">Black</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Blue"></div>
+                                    <p class="color__box__text">Blue</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Brown"></div>
+                                    <p class="color__box__text">Brown</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Green"></div>
+                                    <p class="color__box__text">Green</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Grey"></div>
+                                    <p class="color__box__text">Grey</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Multi"></div>
+                                    <p class="color__box__text">
+                                        Multi
+                                        Color
+                                    </p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Orange"></div>
+                                    <p class="color__box__text">Orange</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Pink"></div>
+                                    <p class="color__box__text">Pink</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Purple"></div>
+                                    <p class="color__box__text">Purple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="store__box" class="store__left__technology">
+                            <div class="store__left__sale__box__top">
+                                <h3 class="store__left__sale__box__title">Size</h3>
+                                <button class="store__left__sale__box__btn rotate">
+                                   <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+                                </button>
+                            </div>
+                              <div class="color__botom">
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Black"></div>
+                                    <p class="color__box__text">Black</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Blue"></div>
+                                    <p class="color__box__text">Blue</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Brown"></div>
+                                    <p class="color__box__text">Brown</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Green"></div>
+                                    <p class="color__box__text">Green</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Grey"></div>
+                                    <p class="color__box__text">Grey</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Multi"></div>
+                                    <p class="color__box__text">
+                                        Multi
+                                        Color
+                                    </p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Orange"></div>
+                                    <p class="color__box__text">Orange</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Pink"></div>
+                                    <p class="color__box__text">Pink</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Purple"></div>
+                                    <p class="color__box__text">Purple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="store__box" class="store__left__technology">
+                            <div class="store__left__sale__box__top">
+                                <h3 class="store__left__sale__box__title">Collections</h3>
+                                <button class="store__left__sale__box__btn rotate">
+                                   <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+                                </button>
+                            </div>
+                              <div class="color__botom">
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Black"></div>
+                                    <p class="color__box__text">Black</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Blue"></div>
+                                    <p class="color__box__text">Blue</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Brown"></div>
+                                    <p class="color__box__text">Brown</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Green"></div>
+                                    <p class="color__box__text">Green</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Grey"></div>
+                                    <p class="color__box__text">Grey</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Multi"></div>
+                                    <p class="color__box__text">
+                                        Multi
+                                        Color
+                                    </p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Orange"></div>
+                                    <p class="color__box__text">Orange</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Pink"></div>
+                                    <p class="color__box__text">Pink</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Purple"></div>
+                                    <p class="color__box__text">Purple</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="store__box" class="store__left__technology">
+                            <div class="store__left__sale__box__top">
+                                <h3 class="store__left__sale__box__title">Fit</h3>
+                                <button class="store__left__sale__box__btn ">
                                 <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-                            </button>
-                        </div>
-                          <div class="color__botom">
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Black"></div>
-                                <p class="color__box__text">Black</p>
+    <path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    
+    
+                                </button>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Blue"></div>
-                                <p class="color__box__text">Blue</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Brown"></div>
-                                <p class="color__box__text">Brown</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Green"></div>
-                                <p class="color__box__text">Green</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Grey"></div>
-                                <p class="color__box__text">Grey</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Multi"></div>
-                                <p class="color__box__text">
-                                    Multi
-                                    Color
-                                </p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Orange"></div>
-                                <p class="color__box__text">Orange</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Pink"></div>
-                                <p class="color__box__text">Pink</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Purple"></div>
-                                <p class="color__box__text">Purple</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="store__box" class="store__left__technology">
-                        <div class="store__left__sale__box__top">
-                            <h3 class="store__left__sale__box__title">Size</h3>
-                            <button class="store__left__sale__box__btn rotate">
-                               <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-                            </button>
-                        </div>
-                          <div class="color__botom">
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Black"></div>
-                                <p class="color__box__text">Black</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Blue"></div>
-                                <p class="color__box__text">Blue</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Brown"></div>
-                                <p class="color__box__text">Brown</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Green"></div>
-                                <p class="color__box__text">Green</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Grey"></div>
-                                <p class="color__box__text">Grey</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Multi"></div>
-                                <p class="color__box__text">
-                                    Multi
-                                    Color
-                                </p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Orange"></div>
-                                <p class="color__box__text">Orange</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Pink"></div>
-                                <p class="color__box__text">Pink</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Purple"></div>
-                                <p class="color__box__text">Purple</p>
+                              <div class="color__botom">
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Black"></div>
+                                    <p class="color__box__text">Black</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Blue"></div>
+                                    <p class="color__box__text">Blue</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Brown"></div>
+                                    <p class="color__box__text">Brown</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Green"></div>
+                                    <p class="color__box__text">Green</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Grey"></div>
+                                    <p class="color__box__text">Grey</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Multi"></div>
+                                    <p class="color__box__text">
+                                        Multi
+                                        Color
+                                    </p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Orange"></div>
+                                    <p class="color__box__text">Orange</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Pink"></div>
+                                    <p class="color__box__text">Pink</p>
+                                </div>
+                                <div class="color__box">
+                                    <div class="store__left__color__box_color Purple"></div>
+                                    <p class="color__box__text">Purple</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div id="store__box" class="store__left__technology">
-                        <div class="store__left__sale__box__top">
-                            <h3 class="store__left__sale__box__title">Collections</h3>
-                            <button class="store__left__sale__box__btn rotate">
-                               <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-                            </button>
+                    <div data-wow-duration="2s" class="wow animate__animated animate__slideInRight store__right">
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
+                            </div>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
                         </div>
-                          <div class="color__botom">
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Black"></div>
-                                <p class="color__box__text">Black</p>
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Blue"></div>
-                                <p class="color__box__text">Blue</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Brown"></div>
-                                <p class="color__box__text">Brown</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Green"></div>
-                                <p class="color__box__text">Green</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Grey"></div>
-                                <p class="color__box__text">Grey</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Multi"></div>
-                                <p class="color__box__text">
-                                    Multi
-                                    Color
-                                </p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Orange"></div>
-                                <p class="color__box__text">Orange</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Pink"></div>
-                                <p class="color__box__text">Pink</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Purple"></div>
-                                <p class="color__box__text">Purple</p>
-                            </div>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
+                            <a href="#" class="popular__card__link">
+                                <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                            </a>
                         </div>
-                    </div>
-                    <div id="store__box" class="store__left__technology">
-                        <div class="store__left__sale__box__top">
-                            <h3 class="store__left__sale__box__title">Fit</h3>
-                            <button class="store__left__sale__box__btn ">
-                            <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M1 1L7 7L13 1" stroke="#454545" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-
-
-                            </button>
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
+                            </div>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
                         </div>
-                          <div class="color__botom">
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Black"></div>
-                                <p class="color__box__text">Black</p>
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Blue"></div>
-                                <p class="color__box__text">Blue</p>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
+                        </div>
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Brown"></div>
-                                <p class="color__box__text">Brown</p>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
+                            <a href="#" class="popular__card__link">
+                                <p class="popular__card__discount">Extra 20% Off SPRING</p>
+                            </a>
+                        </div>
+                        <div class="popular__card min__height">
+                            <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
+                            <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
+                                <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
+                                    class="popular__mini__img" />
+                                <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
+                                    class="popular__mini__img" />
+                                <span class="popular__card__mini__img__text">+12</span>
                             </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Green"></div>
-                                <p class="color__box__text">Green</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Grey"></div>
-                                <p class="color__box__text">Grey</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Multi"></div>
-                                <p class="color__box__text">
-                                    Multi
-                                    Color
-                                </p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Orange"></div>
-                                <p class="color__box__text">Orange</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Pink"></div>
-                                <p class="color__box__text">Pink</p>
-                            </div>
-                            <div class="color__box">
-                                <div class="store__left__color__box_color Purple"></div>
-                                <p class="color__box__text">Purple</p>
-                            </div>
+                            <h2 class="popular_card__heading">Just In</h2>
+                            <h3 class="popular__card__title popular__title__md__hidden">
+                                Nike Tech Fleece Windrunner
+                            </h3>
+                            <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
                         </div>
                     </div>
                 </div>
-                <div class="store__right">
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    </div>
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                        <p class="popular__card__discount">Extra 20% Off SPRING</p>
-                    </div>
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    </div>
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    </div>
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                        <p class="popular__card__discount">Extra 20% Off SPRING</p>
-                    </div>
-                    <div class="popular__card min__height">
-                        <img src="./img/popular/big-imgs/big-2.png" alt="" class="popular__img h-400" />
-                        <div class="popular__card__mini__imgs popular__mini__img__md__hidden">
-                            <img id="mini-1" src="./img/popular/mini-imgs/mini-1.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-2" src="./img/popular/mini-imgs/mini-2.svg" alt=""
-                                class="popular__mini__img" />
-                            <img id="mini-3" src="./img/popular/mini-imgs/mini-3.svg" alt=""
-                                class="popular__mini__img" />
-                            <span class="popular__card__mini__img__text">+12</span>
-                        </div>
-                        <h2 class="popular_card__heading">Just In</h2>
-                        <h3 class="popular__card__title popular__title__md__hidden">
-                            Nike Tech Fleece Windrunner
-                        </h3>
-                        <p class="popular__card__text" style="margin-bottom: 20px">$145</p>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
     <!-- store end -->
@@ -606,6 +629,12 @@
         </div>
     </footer>
     <!-- footer end -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
+    integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script>
+    new WOW().init();
+</script>
     <script src="./js/store.js"></script>
 </body>
 
