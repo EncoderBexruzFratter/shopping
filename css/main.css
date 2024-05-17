@@ -2230,7 +2230,9 @@ html {
     font-weight: 400;
     color: #8c8c8c;
 }
-
+.swiper__shop{
+    display: none;
+}
 @media(max-width:1280px) {
     .shop {
         padding-top: 80px;
