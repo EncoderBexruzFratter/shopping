@@ -436,11 +436,6 @@ html {
     background-color: #101010 !important;
 }
 
-.hero__swiper__pagination {
-    position: absolute !important;
-    top: 50px !important;
-    right: 50px !important;
-}
 
 #hero__text__box__responsive {
     display: none;
@@ -644,6 +639,11 @@ html {
 }
 
 @media(max-width:768px) {
+    .hero{
+        background-image: url(../img/hero/hero__res.png);
+        background-position: center;
+        background-size: cover;
+    }
     .swiper {
         display: none;
     }
@@ -652,10 +652,6 @@ html {
         justify-content: center;
         padding-top: 49px;
         padding-bottom: 328px;
-        background-image: url(../img/hero/hero__res.png);
-        /* background-image: url(../img/hero/); */
-        background-position: center;
-        background-size: cover;
         padding-right: 10px;
     }
 
@@ -743,14 +739,7 @@ html {
     object-fit: cover;
     margin-bottom: 40px;
     /* filter: sepia(100); */
-    transform: rotate(0deg);
-    transition: all .3s;
 }
-
-.trending__img:hover {
-    transform: rotate(5deg);
-}
-
 .trending__card__title {
     font-size: 24px;
     font-weight: 400;
@@ -1370,6 +1359,8 @@ html {
     margin-left: auto;
     width: 14px;
     height: 12px;
+    background-color: transparent;
+    border: none;
 }
 
 .mb_0 {
@@ -2512,4 +2503,17 @@ html {
 .select__size__active {
     background-color: #191919;
     color: white;
+}
+
+.hero__swiper__pagination{
+    z-index: 2 !important;
+}
+.hero__wrapper{
+    z-index: 3;
+}
+.mini__store{
+    max-height: 168px;
+}
+.store__left__sale__box__top{
+    margin-bottom: 30px
 }
