@@ -399,9 +399,8 @@ html {
     padding-bottom: 50px;
     filter: blur(1px);
     transition: all .3s;
-    background: rgb(187, 235, 241);
-    background: linear-gradient(90deg, rgba(187, 235, 241, 1) 0%, rgba(220, 250, 255, 1) 38%, rgba(220, 250, 255, 1) 71%, rgba(187, 235, 241, 1) 100%);
     background-image: url(../img/hero/hero__bc.png);
+    background-color: rgb(187, 235, 241);
     background-position: center center;
     background-size: cover;
 }
@@ -803,11 +802,11 @@ html {
     top: 0;
     left: 0;
     transition: all .3s;
-    background: rgb(54, 216, 236);
-    background: linear-gradient(90deg, rgba(54, 216, 236, 1) 0%, rgba(56, 177, 198, 1) 38%, rgba(61, 162, 179, 1) 71%, rgba(99, 229, 245, 1) 100%);
     background-image: url(../img/trending/trending__bottom_1.png);
     background-position: center;
     background-size: cover;
+    background-color: rgb(54, 216, 236);
+    /* background: linear-gradient(90deg, rgba(54, 216, 236, 1) 0%, rgba(56, 177, 198, 1) 38%, rgba(61, 162, 179, 1) 71%, rgba(99, 229, 245, 1) 100%); */
 }
 
 .trending__card__bg_2 {
@@ -820,6 +819,7 @@ html {
     top: 0;
     left: 0;
     transition: all .3s;
+    background-color: rgb(54, 216, 236);
 }
 
 .trending__bottom__card__box:hover .trending__card__bg {
