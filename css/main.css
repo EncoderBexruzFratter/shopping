@@ -138,7 +138,7 @@ html {
     width: 100%;
     display: flex;
     align-items: center;
-    background-color: #F2F2F2;
+    background-color: transparent;
     padding: 5px;
     overflow: hidden;
     gap: 15px;
@@ -172,10 +172,12 @@ html {
     line-height: 26.46px;
     color: #191919
 }
-.search__box:hover{
+
+.search__box:hover {
     border: 1px solid #191919;
     border-radius: 30px;
 }
+
 .header__search__inp::placeholder {
     font-size: 18px;
     font-weight: 500;
@@ -393,13 +395,15 @@ html {
 .hero {
     padding-bottom: 40px;
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(242, 242, 242, 0.09) 68.79%, rgba(242, 242, 242, 0.17) 74.54%, rgba(242, 242, 242, 0.56) 79.6%, rgba(242, 242, 242, 0.72) 84.26%, #F2F2F2 89.81%);
-    background-image: url(../img/hero/hero__bc.png);
-    background-position: center center;
-    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 50px;
     filter: blur(1px);
     transition: all .3s;
+    background: rgb(187, 235, 241);
+    background: linear-gradient(90deg, rgba(187, 235, 241, 1) 0%, rgba(220, 250, 255, 1) 38%, rgba(220, 250, 255, 1) 71%, rgba(187, 235, 241, 1) 100%);
+    background-image: url(../img/hero/hero__bc.png);
+    background-position: center center;
+    background-size: cover;
 }
 
 .hero:hover {
@@ -604,9 +608,11 @@ html {
         padding-bottom: 50px;
         padding-right: 50px;
     }
-    #hero__text__box__responsive{
+
+    #hero__text__box__responsive {
         display: block;
     }
+
     .hero__swiper {
         display: none !important;
     }
@@ -644,11 +650,12 @@ html {
 }
 
 @media(max-width:768px) {
-    .hero{
+    .hero {
         background-image: url(../img/hero/hero__res.png);
         background-position: center;
         background-size: cover;
     }
+
     .swiper {
         display: none;
     }
@@ -737,14 +744,16 @@ html {
 
 /* .trending__card__box{
 } */
-.trending__img__box{
+.trending__img__box {
     max-width: 458px;
     width: 100%;
     transition: all .3s;
 }
-.trending__img__box:hover{
+
+.trending__img__box:hover {
     transform: rotate(10deg);
 }
+
 .trending__img {
     width: 100%;
     display: block;
@@ -754,10 +763,12 @@ html {
     transition: all .3s;
 
 }
-.trending__img:hover{
+
+.trending__img:hover {
     transform: rotate(10deg);
     transform: scale(.9);
 }
+
 .trending__card__title {
     font-size: 24px;
     font-weight: 400;
@@ -779,20 +790,24 @@ html {
     flex-direction: column;
     gap: 30px;
 }
-.trending__bottom__card__box{
+
+.trending__bottom__card__box {
     position: relative;
     overflow: hidden;
 }
+
 .trending__card__bg {
-    background-image: url(../img/trending/trending__bottom_1.png);
-    background-position: center;
-    background-size: cover;
     position: absolute;
     width: 100%;
     height: 529px;
     top: 0;
     left: 0;
     transition: all .3s;
+    background: rgb(54, 216, 236);
+    background: linear-gradient(90deg, rgba(54, 216, 236, 1) 0%, rgba(56, 177, 198, 1) 38%, rgba(61, 162, 179, 1) 71%, rgba(99, 229, 245, 1) 100%);
+    background-image: url(../img/trending/trending__bottom_1.png);
+    background-position: center;
+    background-size: cover;
 }
 
 .trending__card__bg_2 {
@@ -806,12 +821,15 @@ html {
     left: 0;
     transition: all .3s;
 }
-.trending__bottom__card__box:hover .trending__card__bg{
+
+.trending__bottom__card__box:hover .trending__card__bg {
     transform: scale(1.2);
 }
-.trending__bottom__card__box:hover .trending__card__bg_2{
+
+.trending__bottom__card__box:hover .trending__card__bg_2 {
     transform: scale(1.2);
 }
+
 .trending__bottom__title {
     font-size: 32px;
     font-weight: 500;
@@ -983,20 +1001,24 @@ html {
 .popular__card__link {
     text-decoration: none;
 }
-.popular__img__box{
+
+.popular__img__box {
     max-width: 338px;
     width: 100%;
     overflow: hidden;
 }
+
 .popular__img {
     width: 100%;
     margin-bottom: 20px;
     object-fit: cover;
     transition: all .3s;
 }
-.popular__img__box:hover .popular__img{
+
+.popular__img__box:hover .popular__img {
     transform: scale(1.1);
 }
+
 .popular_card__heading {
     font-size: 18px;
     font-weight: 400;
@@ -1154,7 +1176,8 @@ html {
     object-fit: cover;
     transition: all .3s;
 }
-.dresses__right__img:hover{
+
+.dresses__right__img:hover {
     transform: scale(.9);
 }
 
@@ -1382,9 +1405,11 @@ html {
     opacity: 100%;
     transition: all .3s;
 }
-.footer__nav__link:hover{
+
+.footer__nav__link:hover {
     opacity: 50%;
 }
+
 .your__email {
     display: block;
     max-width: 338px;
@@ -1409,6 +1434,7 @@ html {
     color: #323232;
     background-color: red;
 }
+
 .foter__email {
     width: 100%;
     border: none;
@@ -1418,6 +1444,7 @@ html {
     font-weight: 500;
     color: #323232;
 }
+
 .your__email__img_2 {
     margin-left: auto;
     width: 14px;
@@ -2281,9 +2308,11 @@ html {
     font-weight: 400;
     color: #8c8c8c;
 }
-.swiper__shop{
+
+.swiper__shop {
     display: none;
 }
+
 @media(max-width:1280px) {
     .shop {
         padding-top: 80px;
@@ -2565,15 +2594,18 @@ html {
     color: white;
 }
 
-.hero__swiper__pagination{
+.hero__swiper__pagination {
     z-index: 2 !important;
 }
-.hero__wrapper{
+
+.hero__wrapper {
     z-index: 3;
 }
-.mini__store{
+
+.mini__store {
     max-height: 168px;
 }
-.store__left__sale__box__top{
+
+.store__left__sale__box__top {
     margin-bottom: 30px
 }

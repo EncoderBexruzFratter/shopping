@@ -76,4 +76,16 @@ store__arrow__btn_2.addEventListener("click" , function(){
   store__top__title_right.style.right = "-100%"
 })
 
+// let inp = document.querySelector("#input");
+// inp.addEventListener("input", function () {
+//   let items = document.querySelectorAll(".popular__card__title");
+//   items.forEach(function (item, index) {
+//     if (item.querySelector(".text-xl").textContent.toLocaleLowerCase().indexOf(inp.value) > -1) {
+//       item.style.display = "block";
+//     } else {
+//       item.style.display = "none";
+//     }
+//   });
+// });
+
 
