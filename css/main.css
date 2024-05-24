@@ -141,9 +141,10 @@ html {
     background-color: #F2F2F2;
     padding: 5px;
     overflow: hidden;
-    border-radius: 30px;
     gap: 15px;
     margin-right: 10px;
+    border: 1px solid transparent;
+    transition: all .5s;
 }
 
 .search__btn {
@@ -171,7 +172,10 @@ html {
     line-height: 26.46px;
     color: #191919
 }
-
+.search__box:hover{
+    border: 1px solid #191919;
+    border-radius: 30px;
+}
 .header__search__inp::placeholder {
     font-size: 18px;
     font-weight: 500;
@@ -400,12 +404,10 @@ html {
 
 .hero:hover {
     filter: blur(0px);
-
 }
 
 .hero__container {
     max-width: 1512px;
-
     margin: auto;
     display: flex;
     align-items: end;
@@ -487,11 +489,13 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid transparent;
 }
 
-.hero__buy_btn:hover .hero__view_link {
+.hero__view_link:hover {
     background-color: transparent;
     color: #191919;
+    border: 1px solid #191919;
 }
 
 .hero__view_link:hover {
@@ -733,13 +737,26 @@ html {
 
 /* .trending__card__box{
 } */
-
+.trending__img__box{
+    max-width: 458px;
+    width: 100%;
+    transition: all .3s;
+}
+.trending__img__box:hover{
+    transform: rotate(10deg);
+}
 .trending__img {
     width: 100%;
     display: block;
     object-fit: cover;
     margin-bottom: 40px;
     /* filter: sepia(100); */
+    transition: all .3s;
+
+}
+.trending__img:hover{
+    transform: rotate(10deg);
+    transform: scale(.9);
 }
 .trending__card__title {
     font-size: 24px;
@@ -762,23 +779,44 @@ html {
     flex-direction: column;
     gap: 30px;
 }
-
+.trending__bottom__card__box{
+    position: relative;
+    overflow: hidden;
+}
 .trending__card__bg {
     background-image: url(../img/trending/trending__bottom_1.png);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 529px;
+    top: 0;
+    left: 0;
+    transition: all .3s;
 }
 
 .trending__card__bg_2 {
     background-image: url(../img/trending/trending__bottom_2.png);
     background-position: center;
     background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 529px;
+    top: 0;
+    left: 0;
+    transition: all .3s;
 }
-
+.trending__bottom__card__box:hover .trending__card__bg{
+    transform: scale(1.2);
+}
+.trending__bottom__card__box:hover .trending__card__bg_2{
+    transform: scale(1.2);
+}
 .trending__bottom__title {
     font-size: 32px;
     font-weight: 500;
     color: white;
+    position: relative;
 }
 
 .trending__bottom__shop__btn {
@@ -791,6 +829,7 @@ html {
     font-size: 18px;
     font-weight: 400;
     text-align: center;
+    position: relative;
 }
 
 @media(max-width:1280px) {
@@ -944,13 +983,20 @@ html {
 .popular__card__link {
     text-decoration: none;
 }
-
+.popular__img__box{
+    max-width: 338px;
+    width: 100%;
+    overflow: hidden;
+}
 .popular__img {
     width: 100%;
     margin-bottom: 20px;
     object-fit: cover;
+    transition: all .3s;
 }
-
+.popular__img__box:hover .popular__img{
+    transform: scale(1.1);
+}
 .popular_card__heading {
     font-size: 18px;
     font-weight: 400;
@@ -1106,6 +1152,10 @@ html {
 .dresses__right__img {
     width: 100%;
     object-fit: cover;
+    transition: all .3s;
+}
+.dresses__right__img:hover{
+    transform: scale(.9);
 }
 
 @media(max-width:1280px) {
@@ -1329,8 +1379,12 @@ html {
     font-weight: 400;
     color: #D1D1D1;
     text-decoration: none;
+    opacity: 100%;
+    transition: all .3s;
 }
-
+.footer__nav__link:hover{
+    opacity: 50%;
+}
 .your__email {
     display: block;
     max-width: 338px;
@@ -1340,7 +1394,6 @@ html {
     padding: 14px 22px 14px 20px;
     display: flex;
     align-items: center;
-
 }
 
 .your__email__img {
@@ -1354,8 +1407,17 @@ html {
     font-size: 20px;
     font-weight: 500;
     color: #323232;
+    background-color: red;
 }
-
+.foter__email {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 20px;
+    font-weight: 500;
+    color: #323232;
+}
 .your__email__img_2 {
     margin-left: auto;
     width: 14px;
@@ -1416,11 +1478,7 @@ html {
     border-bottom: 1px solid white;
 }
 
-.foter__email {
-    width: 100%;
-    border: none;
-    outline: none;
-}
+
 
 .foter__email::placeholder {
     font-size: 20px;
@@ -1961,7 +2019,6 @@ html {
     max-width: 557px;
     width: 100%;
     display: flex;
-    align-items: center;
     gap: 20px;
 }
 
@@ -1977,6 +2034,7 @@ html {
     object-fit: cover;
     /* filter: blur(1.5px);
     transition: all .5s; */
+    border-radius: 10px;
 }
 
 /* .shop__left__mini__img:hover{
@@ -1998,6 +2056,7 @@ html {
     /* filter: brightness(70%); */
     /* filter: hue-rotate(10deg); */
     /* transition: all .5s; */
+    border-radius: 10px;
 }
 
 .shop__right {
